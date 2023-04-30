@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+    /* @media screen and (min-width: 992px) {
+        
+    } */
+    
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+#output {
+    background-color: #C6F2BA;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#outputText {
+    font-size: 45px;
+    margin-right: 25px;
+}
+
+#input {
+    background-color: #B6EEA6;
+    flex: 4;
+    display: grid;
+    grid-row: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.inputElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 0px;
+
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    transition: background-color 0.4s ease-in, border-radius  0.5s ease-in;
+}
+
+.inputElement:hover {
+    border-radius: 15px;
+    background-color: #9CE887;
+}
+
+.equal-item {
+    grid-row: 3 / 5;
+    grid-column: 4 / 5;
+}
+
+.calc-item:hover {
+    background-color: #80E265;
+}
